@@ -15,6 +15,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <style>
+/* Keeping your original styles */
 body {
   background-color: #000000;
   padding: 0px;
@@ -29,7 +30,9 @@ body {
 }
 
 #lead {
-  background-repeat: no-repeat;background-position-x: center; margin-top: 2%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 2%;
   background-image: url('./images/Group_animated1.svg');
   background-size: auto;
   background-position-y: -20%;
@@ -37,8 +40,7 @@ body {
 
 .project-image > img {
   max-width: 300px;
-  //height: 30vw;
-  padding:5vw;
+  padding: 5vw;
 }
 
 #lead-down > img {
@@ -46,31 +48,7 @@ body {
   margin-bottom: 1%;
 }
 
-/*media queries at the bottom */
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
+/* Your original media queries remain the same */
 @media (min-width: 768px) and (max-width: 1024px) {
   #lead {
     background-image: url('./images/mobile_animated.svg');
@@ -78,11 +56,6 @@ body {
     background-position-y: 100%;
   }
 }
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #lead {
@@ -92,11 +65,6 @@ body {
   }
 }
 
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
 @media (min-width: 481px) and (max-width: 767px) {
   #lead {
     background-image: url('./images/mobile_animated.svg');
@@ -105,11 +73,6 @@ body {
   }
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
 @media (min-width: 320px) and (max-width: 480px) {
   #lead {
     background-image: url('./images/mobile_animated.svg');
@@ -117,62 +80,38 @@ body {
     background-position-y: 100%;
   }
 }
-
 </style>
 <body id="gradient">
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <!-- End header -->
+
     <div id="lead">
-        <div  id="lead-content">
-
-            <h2>Full Stack Developer</h2>
+        <div id="lead-content">
+            <h2>Senior Software Engineer</h2>
             <a href="https://drive.google.com/file/d/1cHUB460pxFpO1g_t-x-aANh6voDDfKE9/view?usp=sharing" target="_blank" class="btn-rounded-white">Download Resume</a>
-
         </div>
-
-
-        <!-- End #lead-content -->
-
         <div id="lead-overlay"></div>
-
         <div id="lead-down">
-          <img src="./images/muhammed.png" />
-
+            <img src="./images/muhammed.png" />
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End #lead -->
 
     <div id="about">
         <div class="container">
@@ -182,218 +121,143 @@ body {
                 </div>
                 <div class="col-md-8">
                     <p>
-                      Well versed full stack developer capable of learning and integrating different technologies on the fly. Expert with AWS Services, ETL, debugging of Software Processes, Generation of Data Analytics via SQL and Web Applications (using the folowing technology: PHP, Django, React, Jquery, AJAX, Nodejs). My long term goals include pursuing a Masters in Computer Science with a specialization in Machine learning, my current goals are to gain experience in the industry, to grow and hone my skills as a Software Engineer and in turn directly add value on any project I work on.
+                        Senior Software Engineer with extensive experience in full-stack development, specializing in React, React Native, TypeScript, and modern web technologies. Proven track record of building scalable applications and contributing to products that serve thousands of users. Experienced in both startup and established company environments, with a strong focus on clean code, testing, and continuous deployment practices.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End #about -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="May 2018 – May 2019">
-                <h3>N49 Interactive Inc</h3>
+            <div data-date="April 2024 – Present">
+                <h3>SpacesShared</h3>
+                <h4>Senior Software Engineer</h4>
+                <p>
+                    <ul>
+                        <li>Working primarily in NextJS and Adonis to rebuild the platform from scratch as the company scales</li>
+                        <li>Developing a virtual platform for matching students with older adult hosts for safe and affordable home sharing arrangements</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-date="March 2022 – October 2023">
+                <h3>Visit Widget LLC</h3>
+                <h4>Senior Software Engineer</h4>
+                <p>
+                    <ul>
+                        <li>Led React Native development for a cross-device application serving 800,000+ users across 500+ DMOs</li>
+                        <li>Implemented key features including location-based check-ins, QR code scanning, and tour goal tracking</li>
+                        <li>Refactored class components to functional components and introduced modern React patterns</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-date="March 2020 – March 2022">
+                <h3>Humi Inc</h3>
+                <h4>Software Engineer</h4>
+                <p>
+                    <ul>
+                        <li>Built and grew key product modules including Assets Tracker, Applicant Tracker, and Job Board</li>
+                        <li>Improved employee onboarding flows, digital signing, and document storage for 4000+ Canadian SMBs</li>
+                        <li>Contributed throughout the product lifecycle from requirements to deployment</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-date="October 2019 - March 2020">
+                <h3>Mero Technologies</h3>
                 <h4>Full Stack Developer</h4>
                 <p>
-                  <ul>
-                  	<li>Mentored junior developers on Javascript, NodeJS, React and MVC application development </li>
-                  	<li>Developed and maintained ownership of Native PHP Restful API built in Laravel and Android/IOS Mobile client to consume API using React Native for the OPIO application</li>
-                  	<li>Wrote many unit tests in Jests. Performed api tests using Postman,configured CircleCI and github for continuous deployment </li>
-                  	<li>Implement payment system using Stripe API</li>
-                  	<li>Tools used for project: Amazon, Algolia, NEO4J, DynamoDB, CircleCI, Docker, NGINX, Git, React, Node, PHP, Laravel, React Native, TDD</li>
-                  </ul>
+                    <ul>
+                        <li>Developed RESTful API interface and ETL processes for data science operations</li>
+                        <li>Created custom Laravel Nova admin panel and published package to Packagist</li>
+                        <li>Implemented real-time notification system for building maintenance staff</li>
+                    </ul>
                 </p>
             </div>
-
-
-            <div data-date="May 2017 – March 2018">
-                <h3>Polymatiks Inc</h3>
-                <h4>Software Developer</h4>
-                <p>
-                  <ul>
-                    <li>Created an ETL process using python that took weekly uploaded files from an S3 bucket to AWS Redshift and later kicked SQL scripts that generated analytics tables in Redshift e.g.  $ revenue sold weekly,  monthly % growth across all products </li>
-                    <li>Implemented user friendly CRUD operations via React Table and Graph components that updated Django models.  </li>
-                    <li>Performed and provided data analytics that impacted pricing decisions the business across 55k category, region and product combinations</li>
-                  </ul>
-                </p>
-            </div>
-
-            <div data-date="February 2018 – March 2018">
-                <h3>Signal Profits</h3>
-                <h4>Developer - Contractual</h4>
-                <p>
-                  <ul>
-                    <li>Created an ETL process using python that took weekly uploaded files from an S3 bucket to AWS Redshift and later kicked SQL scripts that generated analytics tables in Redshift e.g.  $ revenue sold weekly,  monthly % growth across all products </li>
-                    <li>Implemented user friendly CRUD operations via React Table and Graph components that updated Django models.  </li>
-                    <li>Performed and provided data analytics that impacted pricing decisions the business across 55k category, region and product combinations</li>
-                  </ul>
-                </p>
-            </div>
-
-            <div data-date="March 2016 – March 2017">
-                <h3>Ryerson University</h3>
-                <h4>AR Research Assistant</h4>
-                <p>
-                  <ul>
-                    <li>Designed frontend interface of iOS Augmented Reality App for band “The Millwinders”.</li>
-                    <li>Integrated Catchooms API and created multiple augmented reality scenes using video, images and 3D content</li>
-                  </ul>
-                </p>
-            </div>
-
         </div>
     </div>
-    <!-- End #experience -->
 
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Ryerson University</h3>
             <span class="education-date">Aug 2013 - May 2017</span>
-            <h4>Bachelor of Science (Honours) in Computer Science </h4>
+            <h4>Bachelor of Science (Honours) in Computer Science</h4>
             <p>
-              Undergraduate Coursework: Operating Systems; Introduction to C and Unix; Web Applications; Databases; Advanced Algorithms; OO Programming Languages; Comp. Architecture; Software Engineering; Calculus II.
+                Undergraduate Coursework: Operating Systems; Introduction to C and Unix; Web Applications; Databases; Advanced Algorithms; OO Programming Languages; Comp. Architecture; Software Engineering; Calculus II.
             </p>
         </div>
-        <!-- End .education-block -->
-
-
     </div>
-    <!-- End #education -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-
-              <div class="project shadow-large">
-                  <div class="project-image">
-                      <img src="https://op.io/dashboard/graphics/opio-blue-2x.png" />
-                  </div>
-                  <!-- End .project-image -->
-                  <div class="project-info">
-                      <h3>op.io (The opinion engine of the web)</h3>
-                      <p>
-                        <ul>
-                          <li>Created several web systems within this large SaaS in React and NodeJS</li>
-                          <li>Developed a mobile application in React Native called "opio". Look for this on the android or apple stores!</li>
-                          <li>Took on dev operations in AWS ELB and following E2E testing through git and Circle CI maintained this productionied SaaS system with 500+ paying business' with a daily user activity</li>
-                        </ul>
-                      </p>
-                      <a target="_blank" href="https://op.io" disabled>View Project</a>
-                  </div>
-                  <!-- End .project-info -->
-              </div>
-              <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="./images/cedule-2.jpg"  alt="Cedule App" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Cedule App (2023)</h3>
+                        <p>
+                            <ul>
+                                <li>All-in-one booking system for salons/dentists/massage therapists</li>
+                                <li>Built with Laravel, Vue.js, AWS services (ELB, RDS, S3, CodePipeline)</li>
+                                <li>Integrated Stripe payments, Twilio SMS alerts, and Sentry error monitoring</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
 
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="https://i.imgur.com/McYIZqQ.png" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Tourmonkeys</h3>
                         <p>
-                          <ul>
-                            <li>Live streaming platform for fans who can’t attend a show due to sold out tickets or location constraints. Django, React, Redux, Postgresql, Webpack, Django REST Framework</li>
-                          </ul>
+                            <ul>
+                                <li>Live streaming platform for fans who can't attend shows</li>
+                                <li>Built with Django, React, Redux, PostgreSQL</li>
+                                <li>Implemented real-time streaming capabilities and user management</li>
+                            </ul>
                         </p>
-                        <a target="_blank" href="https://tourmonkeys.com" disabled>View Project (site disabled)</a>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="https://i.imgur.com/y9ouCFX.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Signal Profits</h3>
-                        <p>
-                          <ul>
-                            <li>Management of Stripe subscription for Cryptocurrency trading signals and Integration of means to connect with Telegram, Discord and automating the joining of private Facebook groups (No API exists for this currently).</li>
-                          </ul>
-                        </p>
-                        <a target="_blank" href="https://accounts.signalprofits.com">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="https://i.imgur.com/OdhRybc.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Reellove Wedding Videos</h3>
-                        <p>
-                          <ul>
-                            <li>Developer for wedding videographer company, Reellove Inc. Implemented social media login, instagram/facebook feeds as well as a control panel to customize the front end </li>
-                            <li>Integrated tawk.to chat system allowing for clients to chat with customers on mobile devices whilst gaining analytics on their customers using the website.</li>
-                          </ul>
-                        </p>
-                        <a target="_blank" href="https://reellove.ca">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="https://i.imgur.com/DHgJfQs.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Tafseer</h3>
-                        <p>
-                          <ul>
-                            <li>Converted psd website design into front end code</li>
-                            <li>Used LAMP Stack to create a rich UI to view Quran as well as English translations. Translations inputted through a CMS created in the backend</li>
-                          </ul>
-                        </p>
-                        <a target="_blank" href="http://tafseer.nfshost.com">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
             </div>
         </div>
     </div>
-    <!-- End #projects -->
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>C </li>
-            <li>Java </li>
-            <li>Objective-C </li>
-            <li>Swift </li>
-            <li>SQL </li>
-            <li>JavaScript </li>
-            <li>Python </li>
-            <li>PHP </li>
-            <li>XML </li>
-            <li>AJAX </li>
-            <li>JSON </li>
-            <li>Django </li>
-            <li>React </li>
-            <li>Redux </li>
-            <li>MYSQL </li>
-            <li>Postgres </li>
-            <li>XCode </li>
-            <li>Apache </li>
-            <li>Docker </li>
-            <li>AWS </li>
-            <li>Node.js </li>
-            <li>Git </li>
-            <li>Unix</li>
-      </ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Redux</li>
+            <li>Angular</li>
+            <li>Vue</li>
+            <li>PHP (Laravel)</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Git</li>
+            <li>CI/CD</li>
+            <li>Jest</li>
+            <li>Cypress</li>
+            <li>Detox</li>
+            <li>Firebase</li>
+            <li>Sentry</li>
+            <li>Figma</li>
+        </ul>
     </div>
-    <!-- End #skills -->
 
     <div id="contact">
         <h2>Get in Touch</h2>
@@ -405,16 +269,14 @@ body {
                 <button type="submit">Send</button>
             </form>
         </div>
-        <!-- End #contact-form -->
     </div>
-    <!-- End #contact -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2017 Muhammed Jobe
+                        Copyright &copy; 2024 Muhammed Jobe
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -438,12 +300,11 @@ body {
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script>
-
+    // Your original gradient animation script remains the same
     var colors = new Array(
       [62,35,255],
       [60,255,60],
@@ -463,61 +324,48 @@ body {
 
     colors = colors2;
 
-
     var step = 0;
-    //color table indices for:
-    // current color left
-    // next color left
-    // current color right
-    // next color right
     var colorIndices = [0,1,2,3];
-
-    //transition speed
     var gradientSpeed = 0.002;
 
     function updateGradient()
     {
-
       if ( $===undefined ) return;
 
-    var c0_0 = colors[colorIndices[0]];
-    var c0_1 = colors[colorIndices[1]];
-    var c1_0 = colors[colorIndices[2]];
-    var c1_1 = colors[colorIndices[3]];
+      var c0_0 = colors[colorIndices[0]];
+      var c0_1 = colors[colorIndices[1]];
+      var c1_0 = colors[colorIndices[2]];
+      var c1_1 = colors[colorIndices[3]];
 
-    var istep = 1 - step;
-    var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-    var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-    var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-    var color1 = "rgb("+r1+","+g1+","+b1+")";
+      var istep = 1 - step;
+      var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+      var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+      var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+      var color1 = "rgb("+r1+","+g1+","+b1+")";
 
-    var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-    var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-    var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-    var color2 = "rgb("+r2+","+g2+","+b2+")";
+      var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+      var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+      var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+      var color2 = "rgb("+r2+","+g2+","+b2+")";
 
-     $('#gradient').css({
-       background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-        background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+       $('#gradient').css({
+         background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+          background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 
-      step += gradientSpeed;
-      if ( step >= 1 )
-      {
-        step %= 1;
-        colorIndices[0] = colorIndices[1];
-        colorIndices[2] = colorIndices[3];
+step += gradientSpeed;
+if ( step >= 1 )
+{
+  step %= 1;
+  colorIndices[0] = colorIndices[1];
+  colorIndices[2] = colorIndices[3];
 
-        //pick two new target color indices
-        //do not pick the same as the current one
-        colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-        colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-
-      }
-    }
-    setInterval(updateGradient,500);
-
-    </script>
+  //pick two new target color indices
+  //do not pick the same as the current one
+  colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+  colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+}
+}
+setInterval(updateGradient,500);
+</script>
 </body>
-
-
 </html>
